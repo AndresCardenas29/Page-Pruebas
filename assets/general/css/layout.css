@@ -12,9 +12,18 @@
   font-style: italic;
 }
 
+@font-face {
+  font-family: 'Aurelie';
+  src: url('/assets/font/aurelie_smith/Aurelie\ Smith\ Script\ DEMO.otf');
+}
+
 body {
   background: linear-gradient(90deg, rgb(20, 107, 0) 0%, rgb(50, 175, 0) 100%);
 }
+body.noScroll {
+  overflow-y: hidden;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -28,7 +37,8 @@ header .title {
   color: #FFF;
   font-size: 2em;
   text-align: center;
-  font-weight: 700;
+  font-family: 'Aurelie';
+  font-weight: 1000;
   cursor: default;
   user-select: none;
 }
@@ -62,7 +72,7 @@ header .menu a.login {
   background: rgba(255, 255, 255, 0.281);
 }
 
-.body {
+body > .body {
   min-height: calc(100vh - 180px);
   background: #eee;
 }
@@ -113,12 +123,16 @@ footer .info-footer {
   width: 100vw;
   height: 100vh;
   position: fixed;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   background: rgba(0, 0, 0, 0.322);
   z-index: 1000;
   top: 0;
+}
+
+.screen-login.showLogin {
+  display: flex !important;
 }
 
 .screen-login .container-login {
@@ -136,6 +150,12 @@ footer .info-footer {
   height: 400px;
   position: absolute;
   display: flex;
+  transition: all .3s;
+  left: 0px;
+}
+
+.screen-login .container-login .form-container.show{
+  left: -300px !important;
 }
 
 .screen-login .container-login .login-form,
@@ -159,4 +179,28 @@ footer .info-footer {
   font-weight: 300;
   cursor: default;
   user-select: none;
+}
+
+
+.screen-login .register-form .header {
+  background: linear-gradient(270deg, rgb(20, 107, 0) 0%, rgb(50, 175, 0) 100%);
+}
+
+.screen-login .body .logo-text{
+  font-family: 'Aurelie';
+  font-size: 4em;
+  text-align: center;
+  user-select: none;
+}
+
+.screen-login .register-form .body label{
+  font-family: 'Raleway';
+  font-size: .7em;
+  font-weight: 700;
+  display: flex;
+  cursor: pointer;
+}
+
+.screen-login .register-form .body label > input {
+  margin-right: 10px;
 }
