@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Raleway';
+  src:  url('/assets/font/Raleway/Raleway-VariableFont_wght.ttf')
+        format('truetype-variations');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src:  url('/assets/font/Raleway/Raleway-Italic-VariableFont_wght.ttf')
+        format('truetype-variations');
+  font-style: italic;
+}
+
 body {
   background: linear-gradient(90deg, rgb(20, 107, 0) 0%, rgb(50, 175, 0) 100%);
 }
@@ -28,6 +42,7 @@ header .menu{
   display: flex;
   align-items: center;
   list-style: none;
+  color: #FFF;
 }
 
 header .menu a {
@@ -36,10 +51,15 @@ header .menu a {
   padding: 10px 18px;
   margin: 0 0 0 10px;
   transition: all .2s;
+  cursor: pointer;
 }
 
 header .menu a:hover {
   background: rgba(0, 0, 0, 0.281);
+}
+
+header .menu a.login {
+  background: rgba(255, 255, 255, 0.281);
 }
 
 .body {
@@ -87,4 +107,56 @@ footer .info-footer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.screen-login {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.322);
+  z-index: 1000;
+  top: 0;
+}
+
+.screen-login .container-login {
+  width: 300px;
+  height: 400px;
+  background: #FFF;
+  border-radius: 3px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.308);
+  position: absolute;
+  overflow: hidden;
+}
+
+.screen-login .container-login .form-container {
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  display: flex;
+}
+
+.screen-login .container-login .login-form,
+.screen-login .container-login .register-form{
+  width: 300px;
+  height: 400px;
+}
+
+.screen-login .login-form .header,
+.screen-login .register-form .header{
+  height: 40px;
+  background: linear-gradient(90deg, rgb(20, 107, 0) 0%, rgb(50, 175, 0) 100%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #FFF;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-family: 'Raleway';
+  font-weight: 300;
+  cursor: default;
+  user-select: none;
 }
