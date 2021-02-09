@@ -1,14 +1,12 @@
 @font-face {
   font-family: 'Raleway';
-  src:  url('/assets/font/Raleway/Raleway-VariableFont_wght.ttf')
-        format('truetype-variations');
+  src: url('/assets/font/Raleway/Raleway-VariableFont_wght.ttf') format('truetype-variations');
   font-weight: normal;
 }
 
 @font-face {
   font-family: 'Raleway';
-  src:  url('/assets/font/Raleway/Raleway-Italic-VariableFont_wght.ttf')
-        format('truetype-variations');
+  src: url('/assets/font/Raleway/Raleway-Italic-VariableFont_wght.ttf') format('truetype-variations');
   font-style: italic;
 }
 
@@ -20,6 +18,7 @@
 body {
   background: linear-gradient(90deg, rgb(20, 107, 0) 0%, rgb(50, 175, 0) 100%);
 }
+
 body.noScroll {
   overflow-y: hidden;
 }
@@ -48,7 +47,7 @@ header .menu {
   padding: 0;
 }
 
-header .menu{
+header .menu {
   display: flex;
   align-items: center;
   list-style: none;
@@ -72,7 +71,7 @@ header .menu a.login {
   background: rgba(255, 255, 255, 0.281);
 }
 
-body > .body {
+body>.body {
   min-height: calc(100vh - 180px);
   background: #eee;
 }
@@ -84,7 +83,7 @@ footer {
 }
 
 footer .body-footer {
-  min-height:40px;
+  min-height: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -126,7 +125,7 @@ footer .info-footer {
   display: none;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.322);
+  background: rgba(0, 0, 0, 0.6);
   z-index: 1000;
   top: 0;
 }
@@ -137,7 +136,7 @@ footer .info-footer {
 
 .screen-login .container-login {
   width: 300px;
-  height: 400px;
+  height: 450px;
   background: #FFF;
   border-radius: 3px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.308);
@@ -145,27 +144,47 @@ footer .info-footer {
   overflow: hidden;
 }
 
+.screen-login .container-login .btn-cerrar {
+  position: absolute;
+  right: 0px;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  background: rgb(163, 32, 32);
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.screen-login .container-login .btn-cerrar:hover {
+  background: rgb(109, 22, 22);
+}
+
 .screen-login .container-login .form-container {
   width: 600px;
-  height: 400px;
+  height: 450px;
   position: absolute;
   display: flex;
   transition: all .3s;
   left: 0px;
 }
 
-.screen-login .container-login .form-container.show{
+.screen-login .container-login .form-container.show {
   left: -300px !important;
 }
 
 .screen-login .container-login .login-form,
-.screen-login .container-login .register-form{
+.screen-login .container-login .register-form {
   width: 300px;
-  height: 400px;
+  height: 450px;  
 }
 
 .screen-login .login-form .header,
-.screen-login .register-form .header{
+.screen-login .register-form .header {
   height: 40px;
   background: linear-gradient(90deg, rgb(20, 107, 0) 0%, rgb(50, 175, 0) 100%);
   display: flex;
@@ -186,14 +205,14 @@ footer .info-footer {
   background: linear-gradient(270deg, rgb(20, 107, 0) 0%, rgb(50, 175, 0) 100%);
 }
 
-.screen-login .body .logo-text{
+.screen-login .body .logo-text {
   font-family: 'Aurelie';
   font-size: 4em;
   text-align: center;
   user-select: none;
 }
 
-.screen-login .register-form .body label{
+.screen-login .register-form .body label {
   font-family: 'Raleway';
   font-size: .7em;
   font-weight: 700;
@@ -201,6 +220,12 @@ footer .info-footer {
   cursor: pointer;
 }
 
-.screen-login .register-form .body label > input {
+.register-form input[name='repass'].error{
+  box-shadow: 0 0 4px red;
+  border: 1px solid red;
+  background: rgb(255, 229, 229);
+}
+
+.screen-login .register-form .body label>input {
   margin-right: 10px;
 }
