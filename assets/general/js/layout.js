@@ -10,6 +10,10 @@ const btn_inicio_secion = document.getElementById("btn_inicio_secion");
 const btn_cerrar_login = document.querySelector('.btn-cerrar');
 const btn_registrarse = document.querySelector(".register-form input[type='button']");
 const btn_iniciar_sesion = document.querySelector(".login-form input[type='button']");
+const btn_abrir_menu = document.querySelector('.icon-menu');
+const btn_cerrar_menu = document.querySelector('.cerrar-menu');
+const menu = document.querySelector('.menu');
+
 /* Fin botones */
 
 /* Input */
@@ -45,6 +49,9 @@ btn_iniciar_sesion.addEventListener('click', () => {
   const recordar = document.querySelector(".login-form input[name='recordar']").checked;
   form_login(user, pass, recordar);
 });
+
+btn_abrir_menu.addEventListener('click', toggle_menu);
+btn_cerrar_menu.addEventListener('click', toggle_menu);
 
 /* Fin event listener */
 
@@ -158,6 +165,10 @@ function msgSuccess(type, title, text, url, textBtn) {
       });
       break;
   }
+}
+
+function toggle_menu() {
+  menu.classList.toggle('show');
 }
 
 /* Fin funciones */
