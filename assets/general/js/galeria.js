@@ -23,6 +23,14 @@ btn_generar.addEventListener('click', () => {
 
 close_img.addEventListener('click', verImagen);
 
+window.addEventListener('keydown', e => {
+    if (open_img.classList.contains('show')) {
+        if(e.code == 'Escape') {
+            verImagen();
+        }
+    }
+});
+
 function getRandom(min, max) {
     return Math.trunc(Math.random() * (max - min) + min);
 }
@@ -35,18 +43,19 @@ function addItems() {
 }
 
 function items() {
+    let url_img = `https://picsum.photos/${getRandom(1080, 1920)}/${getRandom(1080, 1920)}`;
     const postElement = document.createElement('a');
+    postElement.setAttribute('data-img','');
 
     postElement.innerHTML = `
-        <img src="https://picsum.photos/${getRandom(1080, 1920)}/${getRandom(1080, 1920)}">
+        <img src="${url_img}">
         <div class="info">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, reiciendis.
         </div>
 	`;
     contenedor_galeria.appendChild(postElement);
     postElement.addEventListener('click', e => {
-        console.log(e);
-        contenedor_img.innerHTML = `<img src="${e.path[1].firstElementChild.currentSrc}">`;
+        contenedor_img.innerHTML = `<img src="${url_img}">`;
         verImagen();
     });
 }
