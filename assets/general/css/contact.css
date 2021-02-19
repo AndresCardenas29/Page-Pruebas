@@ -1,0 +1,109 @@
+header li:nth-child(4)>a {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.body .info {
+    background: rgb(9, 22, 8);
+    background: radial-gradient(circle, rgba(9, 22, 8, 1) 10%, rgba(0, 0, 0, 1) 80%);
+    min-height: 101vh;
+    background-attachment: fixed;
+}
+
+.body .info h1 {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body .info .items {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    min-height: calc(100vh - 100px);
+}
+
+.body .info .item {
+    color: #FFF;
+    text-align: center;
+    width: 200px;
+    margin: auto;
+    padding: 20px 10px;
+}
+
+.body .info .item .icono {
+    font-size: 3em;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.445);
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.body .info .item .title {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+.body .info .item .text b {
+    display: block;
+    margin: 10px 0 0 0;
+    padding: 0;
+    line-height: 18px;
+}
+
+.body .info .item .text p {
+    font-weight: 200;
+    display: block;
+    margin: 0px;
+    padding: 0;
+    line-height: 18px;
+}
+
+.body .formulario {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body .formulario .container {
+    background: #FFF;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.445);
+}
+
+.body .formulario h3 {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.body .formulario input{
+    
+}
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+
+    .body .info h1 {
+        font-size: 2.5em;
+    }
+
+    .body .info .items {
+        display: block;
+    }
+
+    .body .info {
+        padding-bottom: 100px;
+    }
+}

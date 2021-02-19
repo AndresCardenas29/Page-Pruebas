@@ -44,9 +44,6 @@ header li:nth-child(3) > a{
     font-family: 'Raleway';
 }
 
-.servicios-top .img {
-}
-
 .servicios-top .img img {
     width: 100%;
     box-shadow: 0 0 6px 2-0px rgba(0, 0, 0, 0.3);
