@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <title>Layout</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./assets/bootstrap-5/css/bootstrap.css">
+
+  <!-- FA4 -->
+  <link rel="stylesheet" href="./assets/fa4/css/all.css">
+
+  <!-- Sweetalert2 -->
+  <link rel="stylesheet" href="./assets/sweetalert2/sweetalert2.css">
+
+  <!-- Css -->
+  <link rel="stylesheet" href="./assets/general/css/layout.css">
+  <link rel="stylesheet" href="./assets/general/css/publicacion.css">
+</head>
+
+<body>
+
+  <header class="container">
+    <div class="title">
+      NekDress
+    </div>
+    <div class="icon-menu">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="galeria.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a class="login">Entrar</a></li>
+      <li><a class="cerrar-menu">Cerrar</a></li>
+    </ul>
+  </header>
+
+  <div class="body">
+    <div class="preheader container pt-2">
+        <button type="button" class="btn btn-outline-dark"><i class="fa fa-angle-left" aria-hidden="true"></i> Regresar</button>
+    </div>
+    <div class="publicacion container pt-2">
+      <div class="imagen d-flex justify-content-center mb-3">
+        <img src="https://picsum.photos/800/400" draggable="false">
+      </div>
+      <div class="titulo">
+        Lorem ipsum dolor sit amet consectetur.
+      </div>
+      <div class="texto">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio laboriosam tempore et, ea ipsum obcaecati ad
+        mollitia velit quis omnis. Exercitationem cum possimus sunt. Aut voluptatum sit minus quisquam iusto. Enim, vel
+        voluptatibus veniam deleniti, nihil earum explicabo iure veritatis dicta nulla alias asperiores quo cumque ex
+        quasi labore hic aliquid soluta debitis, nemo dolor praesentium! Dolor quo sit minus blanditiis, tempore
+        deserunt ratione vel eius deleniti a exercitationem maxime autem reprehenderit accusantium enim nemo sapiente ut
+        saepe. Culpa minima saepe provident deserunt id molestias et autem nemo ullam nostrum! Recusandae ut quos
+        deserunt nisi voluptatem quae ipsa architecto voluptatum.
+      </div>
+      <div class="contenedor-galeria-imagenes">
+        <div class="galeria-imagenes">
+          <div class="contenido-img">
+
+            <div class="item-imagen">
+              <img src="https://picsum.photos/800/400" draggable="false">
+            </div>
+
+            <div class="item-imagen">
+              <img src="https://picsum.photos/800/401" draggable="false">
+            </div>
+
+            <div class="item-imagen">
+              <img src="https://picsum.photos/800/402" draggable="false">
+            </div>
+
+            <div class="item-imagen">
+              <img src="https://picsum.photos/800/403" draggable="false">
+            </div>
+
+            <div class="item-imagen">
+              <img src="https://picsum.photos/800/404" draggable="false">
+            </div>
+
+            <div class="item-imagen">
+              <img src="https://picsum.photos/800/405" draggable="false">
+            </div>
+
+            <div class="item-imagen">
+              <img src="https://picsum.photos/800/406" draggable="false">
+            </div>
+
+            <div class="item-imagen">
+              <img src="https://picsum.photos/800/407" draggable="false">
+            </div>
+          </div>
+        </div>
+        <div class="btn-left">
+          <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        </div>
+        <div class="btn-rigth">
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="botonera mt-4 row">
+        <div class="col-4">
+          <button type="button" class="btn btn-dark w-100" id="btnComentar">Comentar</button>
+        </div>
+        <div class="col-4 text-center">
+          196 Comentarios
+        </div>
+        <div class="col-4">
+          <div class="dropup">
+            <button class="btn btn-dark dropdown-toggle w-100" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Compartir
+            </button>
+            <ul class="dropdown-menu w-100">
+              <li><a class="dropdown-item" href="#">Facebook</a></li>
+              <li><a class="dropdown-item" href="#">Twitter</a></li>
+              <li><a class="dropdown-item" href="#">Otro</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="comentarios mt-3">
+      <div class="contenido container">
+        <div class="comentar">
+          <div class="usuario">
+            <img src="http://placeimg.com/480/480/people">
+          </div>
+          <div class="formulario">
+            <div class="mensaje" contenteditable data-placeholder="Comentar..." id="editMe"></div>
+            <div class="botonera">
+              <button type="button" class="btn btn-dark">Enviar comentario</button>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="lista-comentarios">
+
+          <div class="comentario">
+            <div class="foto">
+              <img src="http://placeimg.com/480/480/people">
+            </div>
+            <div class="texto">
+              <div class="nombre">Delores Prosacco</div>
+              <div class="comentario-texto">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque esse officiis delectus doloribus sapiente, sed et obcaecati fugiat culpa ut excepturi error hic voluptas labore magnam odit. Consectetur, eligendi quisquam.
+              </div>
+              <div class="botonera">
+                <div class="like">
+                  <div class="btn-like">
+                    <i class="fa fa-angle-up" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    16
+                  </div>
+                </div>
+                <div class="separador"></div>
+                <div class="dislike">
+                  <div class="btn-dislike">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    2
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="comentario">
+            <div class="foto">
+              <img src="http://placeimg.com/480/482/people">
+            </div>
+            <div class="texto">
+              <div class="nombre">Delores Prosacco</div>
+              <div class="comentario-texto">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque esse officiis delectus doloribus sapiente, sed et obcaecati fugiat culpa ut excepturi error hic voluptas labore magnam odit. Consectetur, eligendi quisquam.
+              </div>
+              <div class="botonera">
+                <div class="like">
+                  <div class="btn-like check">
+                    <i class="fa fa-angle-up" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    516
+                  </div>
+                </div>
+                <div class="separador"></div>
+                <div class="dislike">
+                  <div class="btn-dislike">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    12
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="comentario">
+            <div class="foto">
+              <img src="http://placeimg.com/480/481/people">
+            </div>
+            <div class="texto">
+              <div class="nombre">Delores Prosacco</div>
+              <div class="comentario-texto">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque esse officiis delectus doloribus sapiente, sed et obcaecati fugiat culpa ut excepturi error hic voluptas labore magnam odit. Consectetur, eligendi quisquam.
+              </div>
+              <div class="botonera">
+                <div class="like">
+                  <div class="btn-like">
+                    <i class="fa fa-angle-up" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    116
+                  </div>
+                </div>
+                <div class="separador"></div>
+                <div class="dislike">
+                  <div class="btn-dislike check">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </div>
+                  <div>
+                    21
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="body-footer container">
+      <div class="links">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </div>
+      <div class="info">
+        <ul>
+          <li><a href="galeria.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="info-footer">
+      &copy; Andres Cárdenas 2021
+    </div>
+  </footer>
+
+
+  <div class="screen-login">
+    <div class="container-login">
+      <div class="btn-cerrar">
+        &times;
+      </div>
+      <div class="form-container">
+        <div class="login-form">
+          <div class="header">
+            Iniciar sesión
+          </div>
+          <div class="body">
+            <form>
+              <div class="form-group pl-3 pr-3">
+                <div class="logo-text">
+                  NekDress
+                </div>
+                <input type="text" name="user" class="form-control mb-3" placeholder="Usuario">
+                <input type="password" name="password" class="form-control mb-3" placeholder="Contraseña">
+                <label class="mb-3">
+                  <input type="checkbox" name="recordar" value="true">
+                  ¿recordar cuenta?
+                </label>
+                <input class="btn btn-success form-control mb-3" type="button" value="Entrar">
+                <button type="button" class="btn btn-secondary form-control" id="btn_registro">Registrarse</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="register-form">
+          <div class="header">
+            Registrarse
+          </div>
+          <div class="body">
+            <form>
+              <div class="form-group pl-3 pr-3">
+                <input type="text" name="name" class="form-control mb-3 mt-2" placeholder="Nombre" autocomplete="off">
+                <input type="text" name="user" class="form-control mb-3" placeholder="Usuario" autocomplete="off">
+                <input type="email" name="email" class="form-control mb-3" placeholder="Email" autocomplete="off">
+                <input type="password" name="pass" class="form-control mb-3" placeholder="Contraseña"
+                  autocomplete="off">
+                <input type="password" name="repass" class="form-control mb-3" placeholder="Confirmar contraseña"
+                  autocomplete="off">
+                <label class="mb-3 pl-2 pr-2">
+                  <input type="checkbox" name="terminos" value="true">
+                  Acepto los terminos y condiciones
+                </label>
+                <input class="btn btn-success form-control mb-3" type="button" value="Registrarse">
+                <button type="button" class="btn btn-secondary form-control" id="btn_inicio_secion">Ya tengo
+                  cuenta</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="./assets/jquery-3.5.1.js"></script>
+  <script src="./assets/popper.min.js"></script>
+  <script src="./assets/bootstrap-5/js/bootstrap.js"></script>
+  <script src="./assets/sweetalert2/sweetalert2.all.js"></script>
+
+  <script src="./assets/general/js/layout.js"></script>
+  <script src="./assets/general/js/publicacion.js"></script>
+
+
+</body>
+
+</html>

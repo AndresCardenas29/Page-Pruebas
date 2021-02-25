@@ -197,6 +197,11 @@ footer .info-footer {
   height: 450px;  
 }
 
+.screen-login .container-login .login-form form,
+.screen-login .container-login .register-form form {
+  padding: 0 10px;
+}
+
 .screen-login .login-form .header,
 .screen-login .register-form .header {
   height: 40px;
