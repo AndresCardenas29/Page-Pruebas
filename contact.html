@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <title>Layout</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/bootstrap-5/css/bootstrap.css">
+
+    <!-- FA4 -->
+    <link rel="stylesheet" href="./assets/fa4/css/all.css">
+
+    <!-- Sweetalert2 -->
+    <link rel="stylesheet" href="./assets/sweetalert2/sweetalert2.css">
+
+    <!-- Css -->
+    <link rel="stylesheet" href="./assets/general/css/layout.css">
+    <link rel="stylesheet" href="./assets/general/css/contact.css">
+</head>
+
+<body>
+
+    <header class="container">
+        <div class="title">
+            NekDress
+        </div>
+        <div class="icon-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="galeria.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a class="login">Entrar</a></li>
+            <li><a class="cerrar-menu">Cerrar</a></li>
+        </ul>
+    </header>
+
+    <div class="body">
+
+        <div class="info">
+            <h1 class="display-4 text-center text-uppercase text-white">
+                Contactanos
+            </h1>
+            <div class="items container">
+
+                <div class="item">
+                    <div class="icono">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="title">address</div>
+                    <div class="text">
+                        <b>Nuestras Sedes</b>
+                        <p>Bogota - Colombia</p>
+                        <p>C.Postal 1234</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="icono">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="title">Phone</div>
+                    <div class="text">
+                        <b>Grupo Contratacion</b>
+                        <p>123 465 7890 Phone</p>
+                        <p>321 654 9870 Fax</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="icono">
+                        <i class="fas fa-comment-alt"></i>
+                    </div>
+                    <div class="title">email</div>
+                    <div class="text">
+
+                        <b>Informacion</b>
+                        <p>info@nekdress.com</p>
+
+                        <b>Servicios</b>
+                        <p>service@nekdress.com</p>
+
+                        <b>Contratos</b>
+                        <p>contratos@nekdress.com</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="formulario">
+            <div class="container w-25">
+                <div class="row p-3">
+                    <h3 class="text-uppercase text-">Contacto</h3>
+                    <div class="form-group w-100">
+                        <input type="text" class="form-control mb-3" placeholder="Email" aria-describedby="helpId">
+                        <input type="text" class="form-control mb-3" placeholder="Nombre" aria-describedby="helpId">
+                        <input type="text" class="form-control mb-3" placeholder="Asunto" aria-describedby="helpId">
+                        <textarea class="form-control mb-3" id="txtArea" rows="3" placeholder="Mensaje"></textarea>
+                        <button type="button" name="" id="" class="btn btn-dark btn-lg w-100">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+
+    <footer>
+        <div class="body-footer container">
+            <div class="links">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+            <div class="info">
+                <ul>
+                    <li><a href="galeria.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="info-footer">
+            &copy; Andres Cárdenas 2021
+        </div>
+    </footer>
+
+
+    <div class="screen-login">
+        <div class="container-login">
+            <div class="btn-cerrar">
+                &times;
+            </div>
+            <div class="form-container">
+                <div class="login-form">
+                    <div class="header">
+                        Iniciar sesión
+                    </div>
+                    <div class="body">
+                        <form>
+                            <div class="form-group pl-3 pr-3">
+                                <div class="logo-text">
+                                    NekDress
+                                </div>
+                                <input type="text" name="user" class="form-control mb-3" placeholder="Usuario">
+                                <input type="password" name="password" class="form-control mb-3"
+                                    placeholder="Contraseña">
+                                <label class="mb-3">
+                                    <input type="checkbox" name="recordar" value="true">
+                                    ¿recordar cuenta?
+                                </label>
+                                <input class="btn btn-success form-control mb-3" type="button" value="Entrar">
+                                <button type="button" class="btn btn-secondary form-control"
+                                    id="btn_registro">Registrarse</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="register-form">
+                    <div class="header">
+                        Registrarse
+                    </div>
+                    <div class="body">
+                        <form>
+                            <div class="form-group pl-3 pr-3">
+                                <input type="text" name="name" class="form-control mb-3 mt-2" placeholder="Nombre"
+                                    autocomplete="off">
+                                <input type="text" name="user" class="form-control mb-3" placeholder="Usuario"
+                                    autocomplete="off">
+                                <input type="email" name="email" class="form-control mb-3" placeholder="Email"
+                                    autocomplete="off">
+                                <input type="password" name="pass" class="form-control mb-3" placeholder="Contraseña"
+                                    autocomplete="off">
+                                <input type="password" name="repass" class="form-control mb-3"
+                                    placeholder="Confirmar contraseña" autocomplete="off">
+                                <label class="mb-3 pl-2 pr-2">
+                                    <input type="checkbox" name="terminos" value="true">
+                                    Acepto los terminos y condiciones
+                                </label>
+                                <input class="btn btn-success form-control mb-3" type="button" value="Registrarse">
+                                <button type="button" class="btn btn-secondary form-control" id="btn_inicio_secion">Ya
+                                    tengo
+                                    cuenta</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./assets/jquery-3.5.1.js"></script>
+    <script src="./assets/popper.min.js"></script>
+    <script src="./assets/bootstrap-5/js/bootstrap.js"></script>
+    <script src="./assets/sweetalert2/sweetalert2.all.js"></script>
+
+    <script src="./assets/general/js/layout.js"></script>
+</body>
+
+</html>
